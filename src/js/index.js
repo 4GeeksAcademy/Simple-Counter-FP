@@ -21,6 +21,7 @@ return (
 };
 
 let counter = 0
+const root = createRoot(document.getElementById("app"));
 setInterval(() => {
 const four = Math.floor(counter / 1000);
 const three = Math.floor(counter / 100);
@@ -28,7 +29,14 @@ const two = Math.floor(counter / 10);
 const one = Math.floor(counter / 1);
 console.log(four, three, two, one);
 counter++;
-const root = createRoot(document.getElementById("app"));
-root.render(<SecondsCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} />);
+
+root.render(
+    <SecondsCounter
+      digitOne={one}
+      digitTwo={two}
+      digitThree={three}
+      digitFour={four}
+    />
+  );
 }, 1000);
 
