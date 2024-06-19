@@ -10,17 +10,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.bigCounter{
-text-align: center;
-background: black;
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.bigCounter div{
-display: inline-block;
-font-size: 60px;
-line-height: 60px;
-background: #101010;
-color: white;
-padding: 10px;
-margin: 3px;
-}
+.bigCounter{
+    text-align: center;
+    background: black;
+    }
+    
+    .bigCounter div{
+    display: inline-block;
+    font-size: 60px;
+    line-height: 60px;
+    background: #101010;
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    }
